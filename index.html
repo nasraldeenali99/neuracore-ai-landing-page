@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neuracore — Intelligence at Scale</title>
+  <meta name="description" content="Neuracore turns raw data into intelligent decisions in real time. Enterprise AI platform for predictive analytics, NLP, computer vision and automation." />
+
+  <!-- External Scripts & Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            grotesk: ['Space Grotesk', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            ink: '#09090B',
+            panel: '#0E0E12',
+            line: 'rgba(255,255,255,0.08)',
+            mint: '#34D399',
+            mintdim: 'rgba(52,211,153,0.12)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="antialiased">
+
+  <!-- ============ NAV ============ -->
+  <header class="fixed top-0 inset-x-0 z-50 nav-blur border-b border-line">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 group">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <rect x="1" y="1" width="24" height="24" rx="6" stroke="#34D399" stroke-width="1.5"/>
+          <circle cx="9" cy="13" r="2.4" fill="#34D399"/>
+          <circle cx="17" cy="8.5" r="2" fill="#34D399" opacity=".65"/>
+          <circle cx="17" cy="17.5" r="2" fill="#34D399" opacity=".65"/>
+          <path d="M11 11.8 15 9.6M11 14.2 15 16.4" stroke="#34D399" stroke-width="1.3"/>
+        </svg>
+        <span class="font-grotesk font-600 tracking-tight text-white text-lg" style="font-weight:600">NEURA<span class="text-mint">CORE</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-9 text-sm text-zinc-400">
+        <a href="#platform" class="hover:text-white transition-colors">Platform</a>
+        <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+        <a href="#innovation" class="hover:text-white transition-colors">Innovation</a>
+        <a href="#about" class="hover:text-white transition-colors">Why Neuracore</a>
+      </nav>
+      <a href="#cta" class="text-sm font-medium text-ink bg-mint hover:bg-emerald-300 transition-colors px-5 py-2.5 rounded-full">Get a Demo</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="relative min-h-screen flex items-center pt-16">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[520px] glow"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-28 w-full">
+      <div class="flex items-center gap-3 mb-8 reveal">
+        <span class="w-2 h-2 rounded-full bg-mint pulse-dot"></span>
+        <span class="text-xs tracking-[0.25em] uppercase text-mint font-medium">Enterprise AI Platform</span>
+      </div>
+
+      <h1 class="font-grotesk text-white leading-[0.95] tracking-tight text-[13.5vw] sm:text-7xl lg:text-[6.5rem] max-w-5xl">
+        <span class="block reveal font-light">INTELLIGENCE</span>
+        <span class="block reveal font-bold">AT <span class="text-stroke">SCALE</span><span class="text-mint">.</span></span>
+      </h1>
+
+      <p class="mt-8 max-w-xl text-lg text-zinc-400 leading-relaxed reveal">
+        We turn raw data into <span class="text-white font-medium">smart decisions in real time</span> —
+        improving accuracy, efficiency and growth across your entire business.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center gap-4 reveal">
+        <a href="#cta" class="bg-mint text-ink font-medium px-8 py-4 rounded-full hover:bg-emerald-300 transition-colors">Start Free Trial</a>
+        <a href="#platform" class="border border-line text-white px-8 py-4 rounded-full hover:border-mint/60 hover:text-mint transition-colors flex items-center gap-2">
+          Explore Platform
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+
+      <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-line pt-8 reveal">
+        <div><p class="font-grotesk text-3xl text-white"><span class="counter" data-target="99.9" data-decimals="1">0</span>%</p><p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Platform uptime</p></div>
+        <div><p class="font-grotesk text-3xl text-white"><span class="counter" data-target="120">0</span>+</p><p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Integrations</p></div>
+        <div><p class="font-grotesk text-3xl text-white"><span class="counter" data-target="40">0</span>+</p><p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">AI models</p></div>
+        <div><p class="font-grotesk text-3xl text-white">&lt;<span class="counter" data-target="50">0</span>ms</p><p class="text-xs text-zinc-500 mt-1 uppercase tracking-wider">Inference latency</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="border-y border-line py-6 overflow-hidden">
+    <div class="marquee-track flex whitespace-nowrap gap-16 w-max font-grotesk text-zinc-600 text-sm tracking-[0.3em] uppercase">
+      <span>Nexora</span><span class="text-mint">✦</span><span>Vertex Labs</span><span class="text-mint">✦</span><span>Quantia</span><span class="text-mint">✦</span><span>Halcyon</span><span class="text-mint">✦</span><span>Orbital</span><span class="text-mint">✦</span><span>Datawave</span><span class="text-mint">✦</span>
+      <span>Nexora</span><span class="text-mint">✦</span><span>Vertex Labs</span><span class="text-mint">✦</span><span>Quantia</span><span class="text-mint">✦</span><span>Halcyon</span><span class="text-mint">✦</span><span>Orbital</span><span class="text-mint">✦</span><span>Datawave</span><span class="text-mint">✦</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="relative py-28">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <p class="text-xs tracking-[0.25em] uppercase text-mint mb-6 reveal">Why Neuracore</p>
+        <h2 class="font-grotesk text-white text-4xl md:text-5xl leading-tight reveal">
+          AI engineered for <span class="font-light">measurable</span> outcomes.
+        </h2>
+      </div>
+      <div class="lg:pt-12">
+        <p class="text-zinc-400 text-lg leading-relaxed reveal">
+          Neuracore specializes in <span class="text-white">production-grade artificial intelligence</span> for modern enterprises.
+          We work alongside data and engineering teams to design, deploy and monitor intelligent systems —
+          <span class="text-white">integrating seamlessly</span> with your existing stack, with a turnkey approach.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLATFORM / CAPABILITIES ============ -->
+  <section id="platform" class="relative py-28 border-t border-line">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-xs tracking-[0.25em] uppercase text-mint mb-6 reveal">The Platform</p>
+      <h2 class="font-grotesk text-white text-4xl md:text-5xl leading-tight max-w-3xl mb-16 reveal">
+        Four engines. <span class="font-light">One intelligent core.</span>
+      </h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Card 1 -->
+        <div class="reveal card-hover border border-line rounded-2xl p-8 bg-panel">
+          <p class="font-grotesk text-mint/60 text-sm mb-10">01</p>
+          <svg class="mb-8" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#34D399" stroke-width="1.4">
+            <path d="M4 28 L12 18 L19 22 L30 7"/><circle cx="30" cy="7" r="2.2" fill="#34D399" stroke="none"/>
+            <path d="M4 28h26" stroke-opacity=".35"/>
+          </svg>
+          <h3 class="font-grotesk text-white text-xl mb-3">PREDICTIVE ANALYTICS</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Forecast demand, churn and revenue with <span class="text-white">production-grade models</span> trained on your data.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="reveal card-hover border border-line rounded-2xl p-8 bg-panel">
+          <p class="font-grotesk text-mint/60 text-sm mb-10">02</p>
+          <svg class="mb-8" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#34D399" stroke-width="1.4">
+            <rect x="5" y="5" width="24" height="24" rx="4" stroke-opacity=".35"/>
+            <path d="M11 13h12M11 18h8M11 23h5"/>
+          </svg>
+          <h3 class="font-grotesk text-white text-xl mb-3">LANGUAGE AI</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Understand and generate text with <span class="text-white">LLMs fine-tuned</span> on your domain — support, search, summarization.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="reveal card-hover border border-line rounded-2xl p-8 bg-panel">
+          <p class="font-grotesk text-mint/60 text-sm mb-10">03</p>
+          <svg class="mb-8" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#34D399" stroke-width="1.4">
+            <rect x="4" y="8" width="26" height="18" rx="3" stroke-opacity=".35"/>
+            <circle cx="13" cy="16" r="3.5"/><path d="M20 13h6M20 18h6M9 26l4-4" />
+          </svg>
+          <h3 class="font-grotesk text-white text-xl mb-3">COMPUTER VISION</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Detect, classify and track objects in <span class="text-white">real time video streams</span> — quality control to safety systems.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="reveal card-hover border border-line rounded-2xl p-8 bg-panel">
+          <p class="font-grotesk text-mint/60 text-sm mb-10">04</p>
+          <svg class="mb-8" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#34D399" stroke-width="1.4">
+            <circle cx="17" cy="17" r="4"/><path d="M17 3v6M17 25v6M3 17h6M25 17h6M7 7l4.2 4.2M22.8 22.8 27 27M27 7l-4.2 4.2M11.2 22.8 7 27" stroke-opacity=".55"/>
+          </svg>
+          <h3 class="font-grotesk text-white text-xl mb-3">INTELLIGENT AUTOMATION</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Orchestrate workflows and agents that <span class="text-white">act on insights automatically</span> — no manual steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTIONS ============ -->
+  <section id="solutions" class="relative py-28 border-t border-line">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-xs tracking-[0.25em] uppercase text-mint mb-6 reveal">Solutions</p>
+      <h2 class="font-grotesk text-white text-4xl md:text-5xl leading-tight max-w-3xl mb-16 reveal">
+        Inbuilt products for a <span class="font-light">data-driven</span> world.
+      </h2>
+
+      <div class="border-t border-line">
+        <a href="#" class="solution-row reveal grid md:grid-cols-[80px_1fr_2fr_40px] items-center gap-6 py-8 border-b border-line px-2">
+          <span class="font-grotesk text-mint/60">S.01</span>
+          <h3 class="font-grotesk text-white text-2xl">FORECAST ENGINE</h3>
+          <p class="text-zinc-400 text-sm">Demand, sales and capacity prediction pipelines with automatic retraining.</p>
+          <svg class="row-arrow text-zinc-600 justify-self-end" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M11 4l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a href="#" class="solution-row reveal grid md:grid-cols-[80px_1fr_2fr_40px] items-center gap-6 py-8 border-b border-line px-2">
+          <span class="font-grotesk text-mint/60">S.02</span>
+          <h3 class="font-grotesk text-white text-2xl">DOCUMIND</h3>
+          <p class="text-zinc-400 text-sm">Turn contracts, tickets and knowledge bases into instant, accurate answers.</p>
+          <svg class="row-arrow text-zinc-600 justify-self-end" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M11 4l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a href="#" class="solution-row reveal grid md:grid-cols-[80px_1fr_2fr_40px] items-center gap-6 py-8 border-b border-line px-2">
+          <span class="font-grotesk text-mint/60">S.03</span>
+          <h3 class="font-grotesk text-white text-2xl">VISIONGUARD</h3>
+          <p class="text-zinc-400 text-sm">Real-time visual monitoring for safety, quality control and compliance.</p>
+          <svg class="row-arrow text-zinc-600 justify-self-end" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M11 4l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a href="#" class="solution-row reveal grid md:grid-cols-[80px_1fr_2fr_40px] items-center gap-6 py-8 border-b border-line px-2">
+          <span class="font-grotesk text-mint/60">S.04</span>
+          <h3 class="font-grotesk text-white text-2xl">FLOWPILOT</h3>
+          <p class="text-zinc-400 text-sm">Autonomous agents that execute ops workflows end-to-end, human-approved.</p>
+          <svg class="row-arrow text-zinc-600 justify-self-end" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M11 4l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a href="#" class="solution-row reveal grid md:grid-cols-[80px_1fr_2fr_40px] items-center gap-6 py-8 border-b border-line px-2">
+          <span class="font-grotesk text-mint/60">S.05</span>
+          <h3 class="font-grotesk text-white text-2xl">AUDITLENS</h3>
+          <p class="text-zinc-400 text-sm">Explain every model decision with full traceability — compliance ready.</p>
+          <svg class="row-arrow text-zinc-600 justify-self-end" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M11 4l6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INNOVATION ============ -->
+  <section id="innovation" class="relative py-28 border-t border-line">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-xs tracking-[0.25em] uppercase text-mint mb-6 reveal">Innovation</p>
+      <h2 class="font-grotesk text-white text-4xl md:text-5xl leading-tight max-w-3xl mb-16 reveal">
+        Research that <span class="font-light">anticipates</span> the future.
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="reveal card-hover border border-line rounded-2xl overflow-hidden bg-panel">
+          <div class="thumb-1 h-56 relative">
+            <svg class="absolute inset-0 m-auto opacity-70" width="70" height="70" viewBox="0 0 70 70" fill="none" stroke="white" stroke-width="1"><circle cx="35" cy="35" r="26" stroke-opacity=".4"/><circle cx="35" cy="35" r="16" stroke-opacity=".6"/><circle cx="35" cy="35" r="4" fill="white" stroke="none"/><path d="M35 9v10M35 51v10M9 35h10M51 35h10" stroke-opacity=".4"/></svg>
+          </div>
+          <div class="p-8">
+            <h3 class="font-grotesk text-white text-xl mb-3">EDGE AI</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">Full models running <span class="text-white">on-device</span> — zero cloud dependency, total privacy.</p>
+          </div>
+        </div>
+        <div class="reveal card-hover border border-line rounded-2xl overflow-hidden bg-panel">
+          <div class="thumb-2 h-56 relative">
+            <svg class="absolute inset-0 m-auto opacity-70" width="70" height="70" viewBox="0 0 70 70" fill="none" stroke="white" stroke-width="1"><rect x="14" y="14" width="42" height="42" rx="8" stroke-opacity=".5"/><circle cx="28" cy="28" r="5" stroke-opacity=".7"/><path d="M14 46l14-10 12 8 16-14" stroke-opacity=".7"/></svg>
+          </div>
+          <div class="p-8">
+            <h3 class="font-grotesk text-white text-xl mb-3">MULTIMODAL MODELS</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">One model that sees, reads and listens — <span class="text-white">understanding context</span> like humans do.</p>
+          </div>
+        </div>
+        <div class="reveal card-hover border border-line rounded-2xl overflow-hidden bg-panel">
+          <div class="thumb-3 h-56 relative">
+            <svg class="absolute inset-0 m-auto opacity-70" width="70" height="70" viewBox="0 0 70 70" fill="none" stroke="white" stroke-width="1"><circle cx="35" cy="22" r="8" stroke-opacity=".7"/><circle cx="20" cy="48" r="6" stroke-opacity=".5"/><circle cx="50" cy="48" r="6" stroke-opacity=".5"/><path d="M30 28 22 42M40 28l8 14M26 48h18" stroke-opacity=".5"/></svg>
+          </div>
+          <div class="p-8">
+            <h3 class="font-grotesk text-white text-xl mb-3">AUTONOMOUS AGENTS</h3>
+            <p class="text-sm text-zinc-400 leading-relaxed">AI teams that plan, execute and verify work — <span class="text-white">under your rules</span>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="cta" class="relative py-32 border-t border-line overflow-hidden">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] glow"></div>
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-grotesk text-white text-4xl md:text-6xl leading-tight reveal">
+        Ready to put AI <span class="font-light">to work</span><span class="text-mint">?</span>
+      </h2>
+      <p class="mt-6 text-zinc-400 text-lg reveal">Deploy your first model in under 10 minutes. No credit card required.</p>
+      <div class="mt-10 flex flex-wrap justify-center gap-4 reveal">
+        <a href="#" class="bg-mint text-ink font-medium px-9 py-4 rounded-full hover:bg-emerald-300 transition-colors">Start Free Trial</a>
+        <a href="#" class="border border-line text-white px-9 py-4 rounded-full hover:border-mint/60 hover:text-mint transition-colors">Talk to Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-line py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-[2fr_1fr_1fr_1fr] gap-12">
+      <div>
+        <div class="flex items-center gap-2.5 mb-5">
+          <svg width="24" height="24" viewBox="0 0 26 26" fill="none">
+            <rect x="1" y="1" width="24" height="24" rx="6" stroke="#34D399" stroke-width="1.5"/>
+            <circle cx="9" cy="13" r="2.4" fill="#34D399"/>
+            <circle cx="17" cy="8.5" r="2" fill="#34D399" opacity=".65"/>
+            <circle cx="17" cy="17.5" r="2" fill="#34D399" opacity=".65"/>
+            <path d="M11 11.8 15 9.6M11 14.2 15 16.4" stroke="#34D399" stroke-width="1.3"/>
+          </svg>
+          <span class="font-grotesk text-white text-lg" style="font-weight:600">NEURA<span class="text-mint">CORE</span></span>
+        </div>
+        <p class="text-sm text-zinc-500 max-w-xs leading-relaxed">Intelligence at scale — enterprise AI engineered for measurable outcomes.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-zinc-600 mb-5">Platform</p>
+        <ul class="space-y-3 text-sm text-zinc-400">
+          <li><a href="#platform" class="hover:text-mint transition-colors">Capabilities</a></li>
+          <li><a href="#solutions" class="hover:text-mint transition-colors">Solutions</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">Pricing</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">Documentation</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-zinc-600 mb-5">Company</p>
+        <ul class="space-y-3 text-sm text-zinc-400">
+          <li><a href="#" class="hover:text-mint transition-colors">About</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">Careers</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">Blog</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-widest text-zinc-600 mb-5">Contact</p>
+        <ul class="space-y-3 text-sm text-zinc-400">
+          <li><a href="#" class="hover:text-mint transition-colors">hello@neuracore.ai</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">GitHub</a></li>
+          <li><a href="#" class="hover:text-mint transition-colors">X / Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-14 pt-8 border-t border-line flex flex-col md:flex-row justify-between gap-4 text-xs text-zinc-600">
+      <p>© 2026 Neuracore Inc. All rights reserved.</p>
+      <p>Concept project — designed for portfolio purposes.</p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript Libraries (GSAP & ScrollTrigger) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
